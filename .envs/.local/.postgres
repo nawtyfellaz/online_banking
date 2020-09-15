@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=grubberfinance
+POSTGRES_USER=wRRCUKCNIbFyZsEysDhzrqENJidDavWi
+POSTGRES_PASSWORD=tkRTXMrqrp1a4s02TuEmZzMPKT6dWWRuvJwBYI2zNvUxen42VnnZaGzilLe4K1J4
