@@ -6,6 +6,13 @@ from django.views import defaults as default_views
 from django.views.generic import TemplateView
 
 urlpatterns = [
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+
+    # ADMIN SKIN
+    path('jet/dashboard/', include('jet.dashboard.urls', namespace='jet-dashboard')),
+    path('jet/', include('jet.urls', namespace='jet')),
+
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
@@ -44,3 +51,5 @@ if settings.DEBUG:
         import debug_toolbar
 
         urlpatterns = [path("__debug__/", include(debug_toolbar.urls))] + urlpatterns
+
+admin.site.site_header = 'GRUBBERFINANCE'
