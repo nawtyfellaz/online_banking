@@ -90,6 +90,7 @@ THIRD_PARTY_APPS = [
 
     # serach engine
     'haystack',
+    'sweetify',
 ]
 
 LOCAL_APPS = [
@@ -439,6 +440,9 @@ CKEDITOR_CONFIGS = {
         ]),
     }
 }
+
+# possible options: 'sweetalert', 'sweetalert2' - default is 'sweetalert2'
+SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
 
 FORCE_SESSION_TO_ONE = True
 FORCE_INACTIVE_USER_ENDSESSION= True
