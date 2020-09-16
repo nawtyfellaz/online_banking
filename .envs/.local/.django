@@ -2,3 +2,20 @@
 # ------------------------------------------------------------------------------
 USE_DOCKER=yes
 IPYTHONDIR=/app/.ipython
+
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+# ------------------------------------------------------------------------------
+CELERY_BROKER_URL=redis://localhost:6379/0
+
+# Flower
+CELERY_FLOWER_USER=hYpYURraajCINGpPzicFhBSEuexfWeKz
+CELERY_FLOWER_PASSWORD=D7nLKeasU4Cl31MLBkP0wri4jOfjuZIkPniqaFgEXkRCKe8m90Ec7hjwkpBrp7K0
+
+# Database
+#
+------------------------------------------------------------------------------
+DATABASE_URL=postgres://jeloblis:Jeloblisvent1.@127.0.0.1:5432/bank
