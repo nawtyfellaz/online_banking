@@ -276,7 +276,8 @@ grubberfinance/media/
 
 .envs/*
 
-!.envs/.local/
+!.envs/.local/.django
+!.envs/.production/
 
 ### Personal Ignored Files
 certs/*
