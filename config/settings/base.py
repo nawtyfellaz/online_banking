@@ -452,7 +452,7 @@ JET_DEFAULT_THEME = 'green'
 JET_SIDE_MENU_COMPACT = False
 # JET_INDEX_DASHBOARD = 'jet.dashboard.dashboard.DefaultIndexDashboard'
 # JET_APP_INDEX_DASHBOARD = 'jet.dashboard.dashboard.DefaultAppIndexDashboard'
-JET_MODULE_GOOGLE_ANALYTICS_CLIENT_SECRETS_FILE = str(ROOT_DIR("client_secrets.json"))
+JET_MODULE_GOOGLE_ANALYTICS_CLIENT_SECRETS_FILE = str(ROOT_DIR / "client_secrets.json")
 
 BOOTSTRAP4 = {
     'inlude_jquery': True,
@@ -461,7 +461,7 @@ BOOTSTRAP4 = {
 HAYSTACK_CONNECTIONS = {
     'default':{
         'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'PATH': str(APPS_DIR.path("whppsh_index"))
+        'PATH': str(APPS_DIR / "whppsh_index")
     }
 }
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
